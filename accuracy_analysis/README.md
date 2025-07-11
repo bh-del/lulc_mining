@@ -1,4 +1,36 @@
-### Accuracy analysis
+The following classes were adopted in our study:
+
+1. <span style="color:#2e8b57;">🌲 <strong>Conifer forest</strong></span>
+2. <span style="color:#3cb371;">🌳 <strong>Mix forest</strong></span>
+3. <span style="color:#8b0000;">🏙️ <strong>Urban</strong></span>
+4. <span style="color:#deb887;">🌾 <strong>Crops</strong></span>: crops before harvest or in spring before carrying out agrotechnical treatments
+5. <span style="color:#a0522d;">🟤 <strong>Bare soils</strong></span>
+6. <span style="color:#32cd32;">🌿 <strong>Permanent grassland</strong></span>
+7. <span style="color:#808080;">🛣️ <strong>Roads</strong></span>
+8. <span style="color:#1e90ff;">🌊 <strong>Waters</strong></span>
+9. <span style="color:#228b22;">🌱 <strong>Crops in vegetation stage</strong></span>
+10. <span style="color:#696969;">⛏️ <strong>Quarries, open pits</strong></span>
+
+
+
+📊 Classification Metrics (Per Class, Overall, and Mean)
+
+| Class   | Accuracy (ACC) | Specificity (TNR) | Producer Accuracy (PA) | User Accuracy (UA) | F1-score |
+|---------|----------------|-------------------|-------------------------|---------------------|----------|
+| 1       | 0.9842         | 0.9852            | 0.9547                  | 0.6857              | 0.7981   |
+| 2       | 0.9751         | 0.9972            | 0.8962                  | 0.9889              | 0.9402   |
+| 3       | 0.9946         | 0.9964            | 0.8954                  | 0.8213              | 0.8568   |
+| 4       | 0.9764         | 0.9772            | 0.9733                  | 0.9119              | 0.9416   |
+| 5       | 0.9932         | 0.9931            | 0.9948                  | 0.8173              | 0.8974   |
+| 7       | 0.9967         | 0.9974            | 0.7024                  | 0.3688              | 0.4836   |
+| 8       | 0.9989         | 0.9998            | 0.9449                  | 0.9906              | 0.9673   |
+| 9       | 0.9773         | 0.9923            | 0.9422                  | 0.9814              | 0.9614   |
+| 10      | 0.9964         | 0.9995            | 0.9827                  | 0.9976              | 0.9901   |
+| **Overall Accuracy (OA)** | **0.9464**     | --                | --                      | --                  | --       |
+| **Mean**    | **0.9881**     | **0.9931**         | **0.9207**              | **0.8404**          | **0.8707** |
+
+
+# Accuracy analysis
 can be performed using flexeble script using different input data and calculate many accyracy metrics
 https://github.com/python-edu/accuracy_checker
 
@@ -19,23 +51,6 @@ https://github.com/python-edu/accuracy_checker
 - raster.tif reference_raster.tif class_map.json
 - raster.tif reference_vector.shp
 - raster.tif reference_vector.shp class_map.json
-
-
-📊 Classification Metrics (Per Class, Overall, and Mean)
-
-| Class   | Accuracy (ACC) | Specificity (TNR) | Producer Accuracy (PA) | User Accuracy (UA) | F1-score |
-|---------|----------------|-------------------|-------------------------|---------------------|----------|
-| 1       | 0.9842         | 0.9852            | 0.9547                  | 0.6857              | 0.7981   |
-| 2       | 0.9751         | 0.9972            | 0.8962                  | 0.9889              | 0.9402   |
-| 3       | 0.9946         | 0.9964            | 0.8954                  | 0.8213              | 0.8568   |
-| 4       | 0.9764         | 0.9772            | 0.9733                  | 0.9119              | 0.9416   |
-| 5       | 0.9932         | 0.9931            | 0.9948                  | 0.8173              | 0.8974   |
-| 7       | 0.9967         | 0.9974            | 0.7024                  | 0.3688              | 0.4836   |
-| 8       | 0.9989         | 0.9998            | 0.9449                  | 0.9906              | 0.9673   |
-| 9       | 0.9773         | 0.9923            | 0.9422                  | 0.9814              | 0.9614   |
-| 10      | 0.9964         | 0.9995            | 0.9827                  | 0.9976              | 0.9901   |
-| **Overall Accuracy (OA)** | **0.9464**     | --                | --                      | --                  | --       |
-| **Mean**    | **0.9881**     | **0.9931**         | **0.9207**              | **0.8404**          | **0.8707** |
 
 
 # Metrics help
