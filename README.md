@@ -2,10 +2,10 @@
 ### *A Case Study on Land Use and Land Cover Classification in Mining Regions*
 
 **Authors**:  
-Beata Hejmanowska<sup>1,‡</sup> [🔗 ORCID: 0000-0003-0230-8386]  
-Krystyna Michałowska<sup>1,†,‡</sup> [🔗 ORCID: 0000-0001-7749-3622]  
-Piotr Kramarczyk<sup>2,‡</sup>  
-Ewa Głowienka<sup>1,‡</sup> [🔗 ORCID: 0000-0001-7326-1592]  
+Beata Hejmanowska https://home.agh.edu.pl/~galia/ [🔗 ORCID: 0000-0003-0230-8386]  
+Krystyna Michałowska  [🔗 ORCID: 0000-0001-7749-3622]  
+Piotr Kramarczyk  
+Ewa Głowienka  [🔗 ORCID: 0000-0001-7326-1592]  
 
 ---
 
