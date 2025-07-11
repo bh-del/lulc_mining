@@ -1,8 +1,6 @@
----
-
 # 📊 Results
 
-We provide sample results from the UNet based classification of Sentinel 2 imagery over the **Strzegom** mining area (scene acquired on **2023-07-09**):
+We provide sample results from the U-Net-based classification of Sentinel-2 imagery over the **Strzegom** mining area (scene acquired on **2023-07-09**):
 
 - 🖼️ **Classified image**: [`strzegom_20230709_33u_class.tif`](./strzegom_20230709_33u_class.tif)  
   → GeoTIFF raster showing pixel-wise LULC classification output
@@ -12,9 +10,9 @@ We provide sample results from the UNet based classification of Sentinel 2 image
 
 🎯 These results can be used as a **benchmark** for evaluating your own models or algorithms on the same task.
 
----
 
-# 🚀 Want to improve the accuracy?
+
+## 🚀 Want to improve the accuracy?
 
 Try using:
 - ⚙️ Alternative classifiers (e.g., Random Forest, CNN, transformers)
@@ -23,6 +21,7 @@ Try using:
 
 We’re excited to see how our dataset performs under various approaches.  
 📬 *Feel free to share your results or improvements!*
+
 
 # Our selected accuracy metrics
 
