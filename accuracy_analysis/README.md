@@ -55,6 +55,56 @@ The following classes were adopted in our study:
 9. <span style="color:#228b22;">🌱 <strong>Crops in vegetation stage</strong></span>
 10. <span style="color:#696969;">⛏️ <strong>Quarries, open pits</strong></span>
 
+---
+
+## 🧮 Interpreting Accuracy: Overall Accuracy vs. Mean Class ACC
+
+### 📌 Metric Definitions
+
+- **Overall Accuracy (OA)**:
+  \[
+  OA = \frac{\sum TP}{TP + TN + FP + FN}
+  \]
+  Measures the proportion of all correctly classified samples across the entire dataset.
+
+- **Per-Class Accuracy (ACC)**:
+  \[
+  ACC = \frac{TP + TN}{TP + TN + FP + FN}
+  \]
+  Measures the correct predictions (both true positives and true negatives) **for a single class**, considering the full confusion matrix.
+
+- **Mean ACC**:  
+  Arithmetic mean of per-class ACC values.
+
+---
+
+### ⚠️ Important Observation
+
+In multi-class classification, **true negatives (TN) are always very large** for each class — because all samples **not belonging to a given class** are counted as TN.  
+This inflates the ACC value for each class, especially for **rare classes**.
+
+As a result:
+
+| Metric     | What it shows                              | Potential Pitfall |
+|------------|---------------------------------------------|-------------------|
+| **OA**     | Overall proportion of correctly classified samples | Dominated by frequent classes |
+| **Mean ACC** | Mean of per-class correctness (including TN)     | **Overestimates** performance due to huge TN values |
+
+---
+
+### 🧪 Real Example from Our Results
+
+- **Overall Accuracy (OA)**: `0.9464`
+- **Mean per-class ACC**: `0.9881`
+
+Despite a solid OA, the **Mean ACC is significantly higher** — not because the classifier performs better on each class, but because TN dominate the formula.
+
+▶️ **Takeaway**:  
+While Mean ACC may seem impressive, it can be misleading.  
+For a more balanced assessment, always consider class-wise **F1-score**, **Producer Accuracy (PA)**, and **User Accuracy (UA)**.
+
+
+
 
 # 🧠 Accuracy Analysis Made Easy
 
