@@ -1,21 +1,10 @@
-# Result of U-Net classification: strzegom_20230709_33u_class.tif 
+# Results
 
-# Confusion matrix: Confusion_matrix_strzegom_20230709.csv
+1. U-Net classification: strzegom_20230709_33u_class.tif 
 
-The following classes were adopted in our study:
+2. Confusion matrix: Confusion_matrix_strzegom_20230709.csv
 
-1. <span style="color:#2e8b57;">🌲 <strong>Conifer forest</strong></span>
-2. <span style="color:#3cb371;">🌳 <strong>Mix forest</strong></span>
-3. <span style="color:#8b0000;">🏙️ <strong>Urban</strong></span>
-4. <span style="color:#deb887;">🌾 <strong>Crops</strong></span>: crops before harvest or in spring before carrying out agrotechnical treatments
-5. <span style="color:#a0522d;">🟤 <strong>Bare soils</strong></span>
-6. <span style="color:#32cd32;">🌿 <strong>Permanent grassland</strong></span>
-7. <span style="color:#808080;">🛣️ <strong>Roads</strong></span>
-8. <span style="color:#1e90ff;">🌊 <strong>Waters</strong></span>
-9. <span style="color:#228b22;">🌱 <strong>Crops in vegetation stage</strong></span>
-10. <span style="color:#696969;">⛏️ <strong>Quarries, open pits</strong></span>
-
-
+# Selected accuracy metrics
 
 📊 Classification Metrics (Per Class, Overall, and Mean)
 
@@ -32,6 +21,20 @@ The following classes were adopted in our study:
 | 10      | 0.9964         | 0.9995            | 0.9827                  | 0.9976              | 0.9901   |
 | **Overall Accuracy (OA)** | **0.9464**     | --                | --                      | --                  | --       |
 | **Mean**    | **0.9881**     | **0.9931**         | **0.9207**              | **0.8404**          | **0.8707** |
+
+
+The following classes were adopted in our study:
+
+1. <span style="color:#2e8b57;">🌲 <strong>Conifer forest</strong></span>
+2. <span style="color:#3cb371;">🌳 <strong>Mix forest</strong></span>
+3. <span style="color:#8b0000;">🏙️ <strong>Urban</strong></span>
+4. <span style="color:#deb887;">🌾 <strong>Crops</strong></span>: crops before harvest or in spring before carrying out agrotechnical treatments
+5. <span style="color:#a0522d;">🟤 <strong>Bare soils</strong></span>
+6. <span style="color:#32cd32;">🌿 <strong>Permanent grassland</strong></span>
+7. <span style="color:#808080;">🛣️ <strong>Roads</strong></span>
+8. <span style="color:#1e90ff;">🌊 <strong>Waters</strong></span>
+9. <span style="color:#228b22;">🌱 <strong>Crops in vegetation stage</strong></span>
+10. <span style="color:#696969;">⛏️ <strong>Quarries, open pits</strong></span>
 
 
 # Accuracy analysis
