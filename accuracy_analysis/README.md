@@ -56,9 +56,13 @@ The following classes were adopted in our study:
 10. <span style="color:#696969;">⛏️ <strong>Quarries, open pits</strong></span>
 
 
-# Accuracy analysis
-can be performed using flexeble script using different input data and calculate many accyracy metrics
-https://github.com/python-edu/accuracy_checker
+# 🧠 Accuracy Analysis Made Easy
+
+Run powerful and flexible accuracy evaluations with just one script!  
+Our companion tool lets you plug in your own data and instantly compute a wide range of accuracy metrics.
+
+👉 Try it here: [**accuracy_checker**](https://github.com/python-edu/accuracy_checker)
+
 
 1.The input is a single *.csv file:
 - raw data: data2cols.csv or data3cols.csv
