@@ -1,5 +1,6 @@
-#Result of U-Net classification: strzegom_20230709_33u_class.tif 
-#Confusion matrix: Confusion_matrix_strzegom_20230709.csv
+# Result of U-Net classification: strzegom_20230709_33u_class.tif 
+
+# Confusion matrix: Confusion_matrix_strzegom_20230709.csv
 
 The following classes were adopted in our study:
 
