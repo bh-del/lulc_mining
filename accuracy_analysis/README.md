@@ -2,7 +2,7 @@
 
 # 📊 Results
 
-We provide sample results from the UNet based classification of Sentinel-2 imagery over the **Strzegom** mining area (scene acquired on **2023-07-09**):
+We provide sample results from the UNet based classification of Sentinel 2 imagery over the **Strzegom** mining area (scene acquired on **2023-07-09**):
 
 - 🖼️ **Classified image**: [`strzegom_20230709_33u_class.tif`](./strzegom_20230709_33u_class.tif)  
   → GeoTIFF raster showing pixel-wise LULC classification output
