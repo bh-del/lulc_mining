@@ -1,10 +1,30 @@
-# Results
+---
 
-1. U-Net classification: strzegom_20230709_33u_class.tif 
+# 📊 Results
 
-2. Confusion matrix: Confusion_matrix_strzegom_20230709.csv
+We provide sample results from the U-Net-based classification of Sentinel-2 imagery over the **Strzegom** mining area (scene acquired on **2023-07-09**):
 
-# Selected accuracy metrics
+- 🖼️ **Classified image**: [`strzegom_20230709_33u_class.tif`](./strzegom_20230709_33u_class.tif)  
+  → GeoTIFF raster showing pixel-wise LULC classification output
+
+- 🧮 **Confusion matrix**: [`Confusion_matrix_strzegom_20230709.csv`](./Confusion_matrix_strzegom_20230709.csv)  
+  → Tabular accuracy summary comparing predicted vs. reference classes
+
+🎯 These results can be used as a **benchmark** for evaluating your own models or algorithms on the same task.
+
+---
+
+# 🚀 Want to improve the accuracy?
+
+Try using:
+- ⚙️ Alternative classifiers (e.g., Random Forest, CNN, transformers)
+- 🧽 Preprocessing techniques (e.g., cloud masking, normalization)
+- 🧠 Data augmentation or temporal stacking
+
+We’re excited to see how our dataset performs under various approaches.  
+📬 *Feel free to share your results or improvements!*
+
+# Our selected accuracy metrics
 
 📊 Classification Metrics (Per Class, Overall, and Mean)
 
