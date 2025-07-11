@@ -61,48 +61,44 @@ The following classes were adopted in our study:
 
 ### 📌 Metric Definitions
 
-- **Overall Accuracy (OA)**:
-  \[
-  OA = \frac{\sum TP}{TP + TN + FP + FN}
-  \]
-  Measures the proportion of all correctly classified samples across the entire dataset.
+- **Overall Accuracy (OA)**  
+  OA = sum(TP) / (TP + TN + FP + FN)  
+  → Proportion of all correctly classified samples across the dataset.
 
-- **Per-Class Accuracy (ACC)**:
-  \[
-  ACC = \frac{TP + TN}{TP + TN + FP + FN}
-  \]
-  Measures the correct predictions (both true positives and true negatives) **for a single class**, considering the full confusion matrix.
+- **Per-Class Accuracy (ACC)**  
+  ACC = (TP + TN) / (TP + TN + FP + FN)  
+  → Accuracy for a single class, including both true positives and true negatives.
 
-- **Mean ACC**:  
-  Arithmetic mean of per-class ACC values.
+- **Mean ACC**  
+  Arithmetic mean of ACC values across all classes.
 
 ---
 
-### ⚠️ Important Observation
+### ⚠️ Why ACC Can Be Misleading
 
-In multi-class classification, **true negatives (TN) are always very large** for each class — because all samples **not belonging to a given class** are counted as TN.  
-This inflates the ACC value for each class, especially for **rare classes**.
+In multi-class classification, the number of **true negatives (TN) is very large** for each individual class — because TN includes all samples that do **not** belong to that class.  
+This inflates the ACC value, especially for **minority classes**.
 
-As a result:
+#### Example from our results:
 
-| Metric     | What it shows                              | Potential Pitfall |
-|------------|---------------------------------------------|-------------------|
-| **OA**     | Overall proportion of correctly classified samples | Dominated by frequent classes |
-| **Mean ACC** | Mean of per-class correctness (including TN)     | **Overestimates** performance due to huge TN values |
+- **Overall Accuracy (OA):** 0.9464  
+- **Mean ACC:** 0.9881 ✅ ← artificially high due to large TN counts
 
 ---
 
-### 🧪 Real Example from Our Results
+### 🧠 Key Takeaways
 
-- **Overall Accuracy (OA)**: `0.9464`
-- **Mean per-class ACC**: `0.9881`
+| Metric       | Represents                                     | Be careful when...                                  |
+|--------------|------------------------------------------------|-----------------------------------------------------|
+| **OA**       | Overall correct predictions                    | Dataset is imbalanced (dominant classes inflate OA) |
+| **Mean ACC** | Mean per-class accuracy (incl. true negatives) | TN dominates — risk of inflated accuracy            |
 
-Despite a solid OA, the **Mean ACC is significantly higher** — not because the classifier performs better on each class, but because TN dominate the formula.
+🟡 **Always complement OA and ACC with**:
+- **F1-score** – harmonic mean of precision and recall  
+- **PA (Producer Accuracy)** – sensitivity / recall  
+- **UA (User Accuracy)** – precision  
 
-▶️ **Takeaway**:  
-While Mean ACC may seem impressive, it can be misleading.  
-For a more balanced assessment, always consider class-wise **F1-score**, **Producer Accuracy (PA)**, and **User Accuracy (UA)**.
-
+These metrics give a more realistic view of class-wise performance.
 
 
 
