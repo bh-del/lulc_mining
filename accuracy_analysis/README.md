@@ -1,3 +1,6 @@
+#Result of U-Net classification: strzegom_20230709_33u_class.tif 
+#Confusion matrix: Confusion_matrix_strzegom_20230709.csv
+
 The following classes were adopted in our study:
 
 1. <span style="color:#2e8b57;">🌲 <strong>Conifer forest</strong></span>
