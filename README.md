@@ -54,11 +54,12 @@ The classification accuracy was evaluated using standard metrics including:
 - **Precision, Recall, F1-Score**
 - **Producer’s and User’s Accuracy**
 - **Confusion Matrix**
-- **Regression metrics** (e.g. RMSE, MAE, R²) where applicable
-
-Results can be found in the `accuracy_analysis` folder.
+- **more in the `accuracy_analysis` folder.
 
 ---
 
-📌 *Note: For reproducibility and additional details, please refer to accompanying scripts and configuration files.*
+## 🤝 Call for Collaboration
+
+We encourage the use of our dataset for testing and benchmarking classification methods.  
+Feel free to cite this work or contact us for further collaboration.
 
