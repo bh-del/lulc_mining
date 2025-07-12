@@ -12,6 +12,6 @@ The following image and reference file were used for **model evaluation** on an 
 - 🗺️ `kolbuszowa_20210725_ref` — test image tile (orthophoto)
 - 🗂️ `kolbuszowa_ref.gpkg` — reference mask in GeoPackage format (ground truth)
 
-> 🧭 Region: Strzegom  
+> 🧭 Region: Kolbuszowa  
 > 📅 Acquisition date: July 25, 2021  
 > 🗃️ Projection zone: EPSG:32633 (UTM zone 34N)
