@@ -1,4 +1,4 @@
-# 📊 Results
+# 📊 Results (only for Strzegom)
 
 We provide sample results from the U-Net-based classification of Sentinel-2 imagery over the **Strzegom** mining area (scene acquired on **2023-07-09**):
 
